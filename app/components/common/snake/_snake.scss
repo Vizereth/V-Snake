@@ -1,0 +1,15 @@
+.snake {
+  grid-row-start: 10;
+  grid-column-start: 20;
+
+  width: 20px;
+  height: 20px;
+  border: solid 2px rgb(49, 57, 38);
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    border: solid 3px rgb(210, 221, 172);
+    background: rgb(61, 66, 51);
+  }
+}

@@ -1,8 +1,6 @@
-import { snake } from "./snake.js";
+import snake from "../components/common/snake/snake.js"
 
-window.addEventListener("keydown", pressKey);
-
-function pressKey(e) {
+const pressKey = (e) => {
   switch (e.keyCode) {
     case 38:
       if (snake.direction !== "down") {
@@ -28,3 +26,5 @@ function pressKey(e) {
       break;
   }
 }
+
+export default pressKey;

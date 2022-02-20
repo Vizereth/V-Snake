@@ -1,18 +1,19 @@
-import { switchPlayButton, scoreElement } from "./domref.js";
-import { food } from "./food.js";
-import { snake } from "./snake.js";
-import { music } from "./sound.js";
+import playButton from "../../ui/play-button/play-btn.js";
+import snake from "../snake/snake.js";
+import score from "../score/score.js";
+import food from "../food/food.js";
+
+import music from "../../../js/sound.js";
 
 class Game {
   constructor() {
-    this.score = 0;
     this.lastRenderTime = 0;
   }
 
   startGame() {
-    music.play(); 
+    music.play();
 
-    switchPlayButton(0);
+    playButton.disable();
 
     food.getNewCoords();
 
@@ -23,20 +24,12 @@ class Game {
     music.pause();
     music.currentTime = 0;
 
-    this.setFinalScore();
-
     this.lastRenderTime = 0;
-  
-    switchPlayButton(1);
 
-    food.removeFood();
-
+    playButton.enable();
+    food.hideFood();
     snake.removeSnake();
-  }
-
-  setFinalScore() {
-    this.score = 0;
-    scoreElement.textContent = "Score: " + this.score;
+    score.reset();
   }
 }
 
@@ -46,7 +39,7 @@ function playGame(currentTime) {
     return;
   }
 
-  window.requestAnimationFrame(playGame)
+  window.requestAnimationFrame(playGame);
 
   const secondsSinceLastRender = (currentTime - game.lastRenderTime) / 1000;
 
@@ -58,9 +51,8 @@ function playGame(currentTime) {
 
   snake.updateSnakePosition();
   food.checkCollisionWithSnake();
-
 }
 
 const game = new Game();
 
-export { game };
+export default game;
