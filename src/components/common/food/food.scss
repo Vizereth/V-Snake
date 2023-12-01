@@ -15,8 +15,18 @@
   visibility: hidden;
 
   &__inner {
-    width: 14px;
-    height: 14px;
     border: solid 2px rgba($color-2, 0.75);
+    width: 15px;
+    height: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__inner-inner {
+    background-color: rgba($color-2, 0.75);
+    width: 3px;
+    height: 3px;
   }
 }
