@@ -1,0 +1,18 @@
+.play-btn {
+  background: transparent;
+  padding: 15px 15px;
+  outline: none;
+
+  color: white;
+  font-size: 24px;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  &:hover:not(:disabled) {
+    color: $color-2;
+  }
+
+  &:disabled {
+    opacity: 0.75;
+  }
+}
