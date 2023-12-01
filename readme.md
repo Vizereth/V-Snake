@@ -1,4 +1,4 @@
-### Javascript Snake
+# Javascript Snake
 
 ## Deploy
 
