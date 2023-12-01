@@ -1,6 +1,6 @@
 .board {
   &__wrapper--1 {
-    border: solid 3px $color-3;
+    border: solid 3px rgb(80, 80, 80);
   }
   
   &__wrapper--2 {
@@ -9,7 +9,7 @@
   }
   
   &__wrapper--3 {
-    border: solid 3px darken($color-3, 5%);
+    border: solid 3px rgb(75, 75, 75);
   }
 
   &__inner {
