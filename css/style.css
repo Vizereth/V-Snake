@@ -133,7 +133,7 @@ body {
 }
 
 .board__wrapper--1 {
-  border: solid 3px #454730;
+  border: solid 3px #505050;
 }
 
 .board__wrapper--2 {
@@ -142,7 +142,7 @@ body {
 }
 
 .board__wrapper--3 {
-  border: solid 3px #363826;
+  border: solid 3px #4b4b4b;
 }
 
 .board__inner {
