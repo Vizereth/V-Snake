@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap);
+
 * {
   padding: 0px;
   margin: 0px;
@@ -95,7 +97,8 @@ body {
 body {
   background: black;
   color: white;
-  font-family: "Press Start 2P", cursive;
+  font-size: 28px;
+  font-family: "Kalam", cursive;
 }
 
 .wrapper {
@@ -133,16 +136,16 @@ body {
 }
 
 .board__wrapper--1 {
-  border: solid 3px #505050;
+  border: solid 2px #2c2c2c;
 }
 
 .board__wrapper--2 {
   background-color: #151519;
-  border: solid 22px #151519;
+  border: solid 10px #151519;
 }
 
 .board__wrapper--3 {
-  border: solid 3px #4b4b4b;
+  border: solid 2px #2c2c2c;
 }
 
 .board__inner {
@@ -216,11 +219,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 15px 0;
 }
 
 .score__text {
-  font-size: 24px;
   text-transform: uppercase;
 }
 
@@ -246,7 +247,7 @@ body {
   padding: 15px 15px;
   outline: none;
   color: white;
-  font-size: 24px;
+  font-size: inherit;
   font-family: inherit;
   text-transform: uppercase;
 }
