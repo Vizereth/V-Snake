@@ -1,15 +1,15 @@
 .board {
   &__wrapper--1 {
-    border: solid 3px rgb(80, 80, 80);
+    border: solid 2px rgb(44, 44, 44);
   }
-  
+
   &__wrapper--2 {
     background-color: lighten($color-1, 4%);
-    border: solid 22px lighten($color-1, 4%);
+    border: solid 10px lighten($color-1, 4%);
   }
-  
+
   &__wrapper--3 {
-    border: solid 3px rgb(75, 75, 75);
+    border: solid 2px rgb(44, 44, 44);
   }
 
   &__inner {

@@ -8,22 +8,21 @@ html(lang="en")
     link(rel="icon", type="image/ico", href="favicon.ico")
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap", rel="stylesheet")
     title Snake
   body
     .wrapper
       .container
-        include ./components/common/game/game.pug
-        .game__ui
-          include ./components/common/score/score.pug
-          include ./components/ui/play-button/play-btn.pug
-        .board
-          .board__wrapper.board__wrapper--1
-            .board__wrapper.board__wrapper--2
-              .board__wrapper.board__wrapper--3
-                .board__wrapper.board__wrapper--4
-                  .board__inner
-                      include ./components/common/food/food.pug
-                      include ./components/common/snake/snake.pug
+        .game
+          .game__ui
+            include ./components/common/score/score.pug
+            include ./components/ui/play-button/play-btn.pug
+          .board
+            .board__wrapper.board__wrapper--1
+              .board__wrapper.board__wrapper--2
+                .board__wrapper.board__wrapper--3
+                  .board__wrapper.board__wrapper--4
+                    .board__inner
+                        include ./components/common/food/food.pug
+                        include ./components/common/snake/snake.pug
   script(src="js/app.min.js", type="module")
 
