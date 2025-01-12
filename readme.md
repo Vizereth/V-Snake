@@ -2,7 +2,7 @@
 
 ## Deploy
 
-https://sophrona.github.io/V-Snake
+https://vizereth.github.io/V-Snake
 
 ## Project setup
 ```
