@@ -2,7 +2,7 @@
 
 ## Deploy
 
-https://vizereth.github.io/V-Snake
+https://vizereth.github.io/vanilla-js-snake
 
 ## Project setup
 ```
